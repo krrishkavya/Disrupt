@@ -1,0 +1,30 @@
+gsap.fromTo('.union',{rotate:-20},{
+    rotate:20,
+    duration:0.6,
+    repeat:-1,
+    yoyo:true,
+    ease:'power1.inOut',
+})
+gsap.fromTo('.purple',{rotate:-120},{
+    rotate:-180,
+    delay:0.2,
+    duration:0.6,
+    repeat:-1,
+    yoyo:true,
+    ease:'power1.inOut',
+})
+gsap.from('.green',{
+    rotate:5,
+    delay:0.4,
+    duration:0.2,
+    repeat:-1,
+    yoyo:true,
+    ease:'power1.inOut',
+})
+gsap.to('.star',{
+    rotate:360,
+    duration:4,
+    repeat:-1,
+    yoyo:true,
+    ease:'slow(0.7,0.7,false)',
+})
