@@ -92,6 +92,7 @@ body{
     justify-content: center;
     cursor: pointer;
     transition: 0.2s ease;
+    position: relative;
 }
 
 .rules-arrow:hover {
@@ -196,6 +197,30 @@ body{
         transform: rotate(-360deg);
     }
 }
+
+
+.progress-ring-wrapper {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: 57px;
+  height: 57px;
+  z-index: 0;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+}
+
+.progress-ring-circle {
+  fill: none;
+  stroke: #D9FE78;
+  stroke-width: 4;
+  stroke-dasharray: 176;
+  stroke-dashoffset: 176;
+  transition: stroke-dashoffset 0.3s linear;
+}
+
 
 @media (max-width:1330px){
     .rules-main-area{
