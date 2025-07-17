@@ -93,6 +93,7 @@ body{
     cursor: pointer;
     transition: 0.2s ease;
     position: relative;
+
 }
 
 .rules-arrow:hover {
@@ -198,7 +199,6 @@ body{
     }
 }
 
-
 .progress-ring-wrapper {
   position: absolute;
   top: -6px;
@@ -220,6 +220,7 @@ body{
   stroke-dashoffset: 176;
   transition: stroke-dashoffset 0.3s linear;
 }
+
 
 
 @media (max-width:1330px){
