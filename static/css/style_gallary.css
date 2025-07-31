@@ -9,6 +9,7 @@ body {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 .top-svg {
   position: absolute;

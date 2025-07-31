@@ -110,7 +110,7 @@ body{
     flex-direction: row;
     flex-shrink: 1;
     min-width: 297px;
-    width: 24vw;
+    width: 26vw;
     padding: 1vw;
     /* border: 0.596px solid #FEFBF1; */
     flex: 0 0;
@@ -130,7 +130,7 @@ body{
     background: #0C1A38;
     flex: 0 0; /* 3 cards per row with gap */
     min-width: 297px;
-    width: 24vw;
+    width: 26vw;
     padding: 1vw;
     height: 30vh;
 }
@@ -231,11 +231,11 @@ body{
     }
 
     .rule-area{
-        min-width: 28vw;
+        min-width: 30vw;
     }
 
     .rule-card{
-        min-width: 28vw;
+        min-width: 30.1vw;
     }
 }
 
