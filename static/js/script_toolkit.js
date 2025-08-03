@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll(".cards");
+    const cards = document.querySelectorAll(".toolkit-cards");
     let current = 1;
 
     function updateCarousel() {
-    cards.forEach(card => card.className = "cards"); // Reset all
+    cards.forEach(card => card.className = "toolkit-cards"); // Reset all
 
     const total = cards.length;
 

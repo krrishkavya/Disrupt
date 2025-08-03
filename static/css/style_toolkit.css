@@ -42,7 +42,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.cards{
+.toolkit-cards{
     width: 22vw;
     height: 60vh;
     border-radius: 3.12719rem;
@@ -69,22 +69,22 @@ body{
 #toolkit-network{
     width:100%;
 }
-#card1 .toolkit-card-background{
+#toolkit-card1 .toolkit-card-background{
     transform: rotate(69.414deg);
 }
-#card2 .toolkit-card-background{
+#toolkit-card2 .toolkit-card-background{
     transform: rotate(123.5deg);
 }
-#card3 .toolkit-card-background{
+#toolkit-card3 .toolkit-card-background{
     transform: rotate(84.75deg);
 }
-#card4 .toolkit-card-background{
+#toolkit-card4 .toolkit-card-background{
     transform: rotate(52.484deg);
 }
-#card5 .toolkit-card-background{
+#toolkit-card5 .toolkit-card-background{
     transform: rotate(115.717deg);
 }
-#card6 .toolkit-card-background{
+#toolkit-card6 .toolkit-card-background{
     transform: rotate(93.393deg);
 }
 .toolkit-bg-img{
@@ -92,7 +92,7 @@ body{
     z-index: -5;
 
 }
-.cards-header{
+.toolkit-cards-header{
     color: #FEFBF1;
     text-align: center;
     font-family: Montserrat;
@@ -104,7 +104,7 @@ body{
     margin-bottom: 0;
 }
 
-.cards-info{
+.toolkit-cards-info{
     margin-left: 6%;
     margin-right: 6%;
     color: #FEFBF1;
@@ -178,14 +178,14 @@ body{
 
 @media (max-width:1330px)
 {
-    .cards{
+    .toolkit-cards{
         width: 300px;
         height: 500px;
     }
 }
 @media (max-height:700px)
 {
-    .cards{
+    .toolkit-cards{
         width:250px;
         height:400px;
     }
