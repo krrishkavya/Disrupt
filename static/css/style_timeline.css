@@ -149,7 +149,7 @@ body{
     grid-row: 4/5;
     justify-self: center;
 }
-.timeline-info{
+p{
     /* display: none; */
     opacity:0;
 }
