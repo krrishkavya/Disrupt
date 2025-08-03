@@ -3,10 +3,8 @@ body{
     height: 100vh;
     max-width: 100vw;
     font-family: Montserrat, sans-serif;
-    padding-top:0.3;
+    /* padding-top:0.3; */
     overflow-x: hidden;
-
-    
 }
 .section1{
     display: grid;

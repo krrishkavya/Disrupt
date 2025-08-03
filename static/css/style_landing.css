@@ -12,7 +12,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* border: 1px solid yellow; */
 }
 .landing-heading{
@@ -197,6 +197,7 @@
     color: white;
     /* border: 2px solid red; */
     justify-content: space-around;
+    margin: 80px;
 }
 .landing-b{
     display: flex;
