@@ -49,7 +49,7 @@
     padding-top: 10px;
     transform-origin: top left;
 }
-.card1{
+.landing-card1{
     width: 720px;
     height: 340px;
     background-color: transparent;
@@ -62,7 +62,7 @@
 }
 
 
-.card2{
+.landing-card2{
     width: 240px;
     height: 170px;
     position:absolute;
@@ -75,7 +75,7 @@
     right:-2px;
     box-sizing: border-box;
 }
-.card3{
+.landing-card3{
     width: 720px;
     height: 340px;
     background-color: transparent;
@@ -90,7 +90,7 @@
 }
 
 
-.card4{
+.landing-card4{
     width: 240px;
     height: 170px;
     position:absolute;
@@ -104,7 +104,7 @@
     box-sizing: border-box;
     display: flex;
 }
-.card3 .union{
+.landing-card3 .union{
     display: inline-block;
     margin-left: 86%;
     margin-top: -7%;
@@ -118,7 +118,7 @@
     /* max-width: 100%;
     height: auto; */
 }
-.card3 .logo{
+.landing-card3 .logo{
     display: flex;
     width: 100%;
     justify-content: space-between;
