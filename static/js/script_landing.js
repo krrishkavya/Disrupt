@@ -1,11 +1,11 @@
-gsap.fromTo('.union',{rotate:-20},{
+gsap.fromTo('.landing-union',{rotate:-20},{
     rotate:20,
     duration:0.6,
     repeat:-1,
     yoyo:true,
     ease:'power1.inOut',
 })
-gsap.fromTo('.purple',{rotate:-120},{
+gsap.fromTo('.landing-purple',{rotate:-120},{
     rotate:-180,
     delay:0.2,
     duration:0.6,
@@ -13,7 +13,7 @@ gsap.fromTo('.purple',{rotate:-120},{
     yoyo:true,
     ease:'power1.inOut',
 })
-gsap.from('.green',{
+gsap.from('.landing-green',{
     rotate:5,
     delay:0.4,
     duration:0.2,
@@ -21,7 +21,7 @@ gsap.from('.green',{
     yoyo:true,
     ease:'power1.inOut',
 })
-gsap.to('.star',{
+gsap.to('.landing-star',{
     rotate:360,
     duration:4,
     repeat:-1,
