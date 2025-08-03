@@ -8,14 +8,14 @@
 /* body{
     padding-right: 30px;
 } */
-.container{
+.landing-container{
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
     /* border: 1px solid yellow; */
 }
-.heading{
+.landing-heading{
     display: flex;
     gap: 6px;
     position:relative;
@@ -25,7 +25,7 @@
     margin-left: 17%;
     margin-right: 20%;
 }
-.heading svg{
+.landing-heading svg{
     flex-shrink: 1;
     z-index: 5;
     background-color: transparent;
@@ -33,13 +33,13 @@
     height: 136px;
 }
 
-.heading svg:nth-last-child(1){
+.landing-heading svg:nth-last-child(1){
     margin-left: -24px;
     z-index: 1;
 }
 
 
-.background{
+.landing-background{
     display: flex;
     width: 100%;
     position:absolute;
@@ -49,7 +49,7 @@
     padding-top: 10px;
     transform-origin: top left;
 }
-.card1{
+.landing-card1{
     width: 720px;
     height: 340px;
     background-color: transparent;
@@ -62,7 +62,7 @@
 }
 
 
-.card2{
+.landing-card2{
     width: 240px;
     height: 170px;
     position:absolute;
@@ -75,7 +75,7 @@
     right:-2px;
     box-sizing: border-box;
 }
-.card3{
+.landing-card3{
     width: 720px;
     height: 340px;
     background-color: transparent;
@@ -90,7 +90,7 @@
 }
 
 
-.card4{
+.landing-card4{
     width: 240px;
     height: 170px;
     position:absolute;
@@ -104,7 +104,7 @@
     box-sizing: border-box;
     display: flex;
 }
-.card3 .union{
+.landing-card3 .landing-union{
     display: inline-block;
     margin-left: 86%;
     margin-top: -7%;
@@ -112,13 +112,13 @@
     background: none;
 
 }
-.union img{
+.landing-union img{
     background: none;
     display: block;
     /* max-width: 100%;
     height: auto; */
 }
-.card3 .logo{
+.landing-card3 .landing-logo{
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -128,20 +128,20 @@
     background: none;
 
 }
-.logo div{
+.landing-logo div{
     background: none;
 }
-.logo div:first-child{
+.landing-logo div:first-child{
     /* border: 2px solid red; */
     margin-top: 2rem;
 }
-.logo img{
+.landing-logo img{
     background: none;
     display: block;
     /* max-width: 100%;
     height: auto; */
 }
-.para{
+.landing-para{
     color: rgba(254, 251, 241, 1);
     margin-top: 9%;
     /* border: 1px solid red; */
@@ -155,7 +155,7 @@
     font-weight: 500;
     font-style: normal;
 }
-.button{
+.landing-button{
     z-index: 5;
     position: relative;
    margin-top: 5%;
@@ -163,7 +163,7 @@
    margin-right: 40%;
    /* border: 1px solid red; */
 }
-.button button{
+.landing-button button{
     box-sizing: border-box;
     padding: 14px 40px;
     display: inline-flex;
@@ -181,43 +181,43 @@
     color: #070C17;
     line-height: normal;
 }
-.button button:hover{
+.landing-button button:hover{
     box-shadow: 6.004px 4.003px 0px 0px #FEFBF1;
     cursor: pointer;
     scale: 1.05;
 }
-.star{
+.landing-star{
     position: absolute;
     margin-top: -10%;
    margin-left: 61%;
    /* z-index: 5; */
 }
-.bar{
+.landing-bar{
     display: flex;
     color: white;
     /* border: 2px solid red; */
     justify-content: space-around;
 }
-.b{
+.landing-b{
     display: flex;
     gap:10px;
 }
-.details{
+.landing-details{
     display: flex;
     flex-direction: column;
 }
-.details{
+.landing-details{
     /* border: 2px dotted yellow; */
     font-family: "Montserrat", sans-serif;
 }
-.details div:first-child{
+.landing-details div:first-child{
     color: rgba(254, 251, 241, 1);
     font-style: normal;
     font-weight: 600;
     font-size: 50px;
     line-height: 3rem;
 }
-.details div:nth-child(2){
+.landing-details div:nth-child(2){
     align-self:stretch;
     color: #D9FE78;
     font-size: 25px;
