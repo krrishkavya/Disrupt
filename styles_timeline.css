@@ -1,4 +1,4 @@
-body{
+.body-timeline{
     background-color: #070C17;
     height: 100vh;
     max-width: 100nw;
@@ -8,12 +8,12 @@ body{
     overflow-y: auto;
     
 }
-.section1{
+.section1-timeline{
     display: grid;
     grid-template-columns: repeat(17,minmax(2vw,auto));
     grid-template-rows: repeat(8,minmax(6vh,auto));
 }
-#heading{
+#heading-timeline{
     text-align: left; 
     font-size: 2.6rem;
     font-style: normal;
@@ -26,7 +26,7 @@ body{
     grid-row: 1/2;
 
 }
-#events{
+#events-timeline{
     color:#D9FE78;
 
 }
@@ -35,38 +35,40 @@ body{
     color:#FEFBF1;
 }
 
-.card1{
-    height: 20vh;
+.card1-timeline{
+    height: 23vh;
     width:20vw;
     display: inline-flex;
     padding: 2vh 0.4vw;
     padding-top: 4vh;
+    
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    gap: 10px;
+    /* gap: 10px; */
     overflow: hidden;
     border-radius: 2.4vw;
     border: 1px solid #FEFBF1;
     background: #0C1A38;
     transition: all 1s ease;
 }
-.card1:hover{
+.card1-timeline:hover{
     height: 40vh;
     transition: height 1s ease;
 }
-.card1:hover p{
+.card1-timeline:hover p{
     /* display: block; */
     opacity: 1;
     font-size: 15px;
     color: #FEFBF1;
     text-align: center;
+    /* min-height: 230vh; */
     font-family: Montserrat;
     padding-left: 3%;
     padding-right: 3%;
     transition: opacity 0.5s ease;
 }
-.card1:hover .purple{
+.card1-timeline:hover .purple{
     /* display:block; */
     opacity: 1;
     transition: opacity 0.5s ease;
@@ -87,27 +89,30 @@ body{
 .date{
     display: flex;
     width: 16vw;
-    min-height: 60px;
+    min-height: 10vh;
+    height:auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 0.02vw;
+    padding-right: 0.02vw;
     gap: 9.116px;
     border-radius: 1vw;
     background: #1B46F4;
     color: #FEFBF1;
     text-align: center;
     font-family: Montserrat;
-    font-size: 0.87rem;
+    font-size: 0.8rem;
     font-style: normal;
     font-weight: 600;
     line-height: 114.439%;
 }
-.line{
+.line-timeline{
     width: 0.2vw;
     background: #0C1A38;
     margin: 0px 0px;
 }
-.circle{
+.circle-timeline{
     height: 60px;
     width: 60px;
     padding:5px,5px;
@@ -127,7 +132,7 @@ body{
     
 
 }
-.circle .astrick{
+.circle-timeline .astrick{
     margin-top:15px;
 }
 #astrick1{
