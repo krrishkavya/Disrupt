@@ -1,0 +1,227 @@
+body{
+    margin:0px;
+    
+   
+}
+.wrapper{
+    position: relative;
+    min-width: 250px;
+    overflow:hidden;
+}
+.back{
+    position: absolute;
+    width:50%;
+    top:0;
+    left:150px;
+}
+.footer{
+    box-sizing: border-box;
+    display:flex;
+    width: 100%;/*1450px*/
+    height: 200px ; /*365px*/
+    flex-shrink: 0;
+    background: #0C1A38;
+    padding:10px 10px 10px 10px ;
+   justify-content: space-around;
+    
+}
+.logodes{
+   padding:10px; 
+}
+.logodes .logo{
+    display: flex;
+    width: 100px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 63.239px;
+    border: 0.833px solid #F5F0E3;
+    backdrop-filter: blur(10.539846420288086px);
+}
+.whiteCircle{
+   display: flex;
+    width: 35%;
+    height: 87%;
+    justify-content: center;
+    align-items: center;
+    gap: 1.739px;
+    flex-shrink: 0; 
+    border-radius: 869.41px;
+    background: #FDF8EA;
+    box-sizing: border-box;
+    padding:5px;
+   margin:2px;
+}
+.logotext p{
+    height:18px;
+    flex-shrink: 0;
+    color: #FEFBF1;
+    font-family: Nohemi,sans-serif;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.729px; /* 151.105% */
+    letter-spacing: -0.614px;
+    margin:0px;
+    
+}
+.logotext .ecell{
+    height:20px;
+    color: #FEFBF1;
+    font-family: Nohemi,sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.916px; /* 157.462% */
+    letter-spacing: -0.006px;
+    text-transform: uppercase;
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+.heading{
+    position: absolute;
+    top:80px;
+}
+.name svg{
+    width:70%;
+}
+.design svg{
+    width:15%;
+    height:10%;
+}
+.contactdetails{
+    padding: 10px;
+    text-align: left;
+    
+}
+.contactdetails ul{
+    margin:0px;
+}
+.contactdetails li{
+    list-style-type:none;
+}
+.vision{
+    color: #FEFBF1;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style-type: none;
+}
+.lets{
+    color: #FEFBF1;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.master{
+    color: #D9FE78;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.redbox{
+    box-sizing: border-box;
+    margin:2px 0px;
+    text-align: center;
+    padding:5px;
+   width: 50%;
+    height: 25px;
+    flex-shrink: 0; 
+    border-radius: 5px;
+    background: #D92B45;
+     color: #FEFBF1;
+    font-family: Montserrat;
+    font-size:12px;
+}
+.contact{
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    gap:8px;
+    
+}
+.contact p{
+    font-size: 10px;
+    flex:0 0 auto;
+     color: #FEFBF1;
+    font-family: Montserrat;
+    font-size:12px;
+    line-height: 15px;
+}
+.quicklinks{
+    border-left-style: solid;
+    border-left-color:#FEFBF1;
+    border-left-width: 0.7px;
+    border-right-style: solid;
+    border-right-color:#FEFBF1;
+    border-right-width: 0.7px;
+    padding:10px 50px;
+    margin:0px ;
+   
+}
+
+ .head{
+    color: #FEFBF1;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    text-decoration: none;
+    margin:0px;
+}
+.quicklinks li{
+    list-style-type:none;
+    text-align: center;
+    color: #FEFBF1;
+    font-family: Montserrat;
+    font-size: 12px;
+    text-decoration: underline;
+    padding:3px;
+}
+.socials p{
+    margin:0px;
+    box-sizing: border-box;
+    padding:10px 5px;
+     color: #FEFBF1;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.socials p{
+    text-align: left;
+}
+
+.imagegrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:50%;
+    column-gap: 5px;
+}
+
+.imagegrid svg.norm{
+    width:50%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.utube{
+    width:80%;
+    height:80%;
+}
+.insta{
+    padding-left:5px;
+}
+/* <681px-phone number cmg down
+<588-the grid collapses */
