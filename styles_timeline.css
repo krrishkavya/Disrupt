@@ -13,7 +13,7 @@ body{
     grid-template-columns: repeat(17,minmax(2vw,auto));
     grid-template-rows: repeat(8,minmax(6vh,auto));
 }
-#heading{
+#headingg{
     text-align: left; 
     font-size: 2.6rem;
     font-style: normal;
@@ -36,28 +36,32 @@ body{
 }
 
 .card1{
-    height: 20vh;
+    height: auto;
     width:20vw;
     display: inline-flex;
     padding: 2vh 0.4vw;
     padding-top: 4vh;
+    padding-bottom: 4vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
     flex-direction: column;
     justify-content: start;
     align-items: center;
     gap: 10px;
     overflow: hidden;
-    border-radius: 2.4vw;
+    border-radius: 3vh;
     border: 1px solid #FEFBF1;
     background: #0C1A38;
     transition: all 1s ease;
 }
-.card1:hover{
+/* .card1:hover{
     height: 40vh;
     transition: height 1s ease;
 }
 .card1:hover p{
-    /* display: block; */
+    
     opacity: 1;
+    
     font-size: 15px;
     color: #FEFBF1;
     text-align: center;
@@ -67,10 +71,10 @@ body{
     transition: opacity 0.5s ease;
 }
 .card1:hover .purple{
-    /* display:block; */
+    
     opacity: 1;
     transition: opacity 0.5s ease;
-}
+} */
 .card-text{
     color: #FEFBF1;
     text-align: center;
@@ -79,15 +83,19 @@ body{
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: 0.96px;
+    letter-spacing: 0.0003vw;
     margin-top: 0%;
-    max-width: 80%;
+    /* max-width: 80%; */
     
+}
+#three .card-text{
+    text-align: left;
 }
 .date{
     display: flex;
     width: 16vw;
-    min-height: 60px;
+    min-height: 4vw;
+    padding: 0.5vh 0.4vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -150,16 +158,18 @@ body{
     justify-self: center;
 }
 p{
-    /* display: none; */
-    opacity:0;
+    display: none;
+    /* opacity:0; */
 }
 .purple{
-    /* display: none; */
-    opacity: 0;
+    display: none;
+    /* opacity: 0;
+    display: block; */
 }
 
 /* uncomment to switch to click- expansion version */
-/* .active p{
+.active p{
+    
     display: block;
     font-size: 15px;
     color: #FEFBF1;
@@ -170,7 +180,7 @@ p{
 }
 .active .purple{
     display: block;
-} */
+}
 
 #horizontal-line{
     padding-left: 0%;
@@ -291,4 +301,109 @@ p{
 #green{
     grid-column: 3/4;
     grid-row: 6/7;
+}
+@media screen and (max-width:776px){
+    .section1{
+        display: grid;
+        grid-template-columns: repeat(8,minmax(2vw,auto));
+        grid-template-rows: repeat(6,minmax(6vh,auto));
+    }
+    #headingg{
+        text-align: center;
+    }
+    #horizontal-line{
+        padding-left: 0%;
+        margin-right: 0%;
+        height:100%;
+        width: 0.2vw;
+        background:#1B46F4 ;
+        z-index:-1;
+        grid-column: 2/3;
+        grid-row: 1/6;
+        justify-self: center;
+        align-self: center;
+    }
+    .card1{
+        width: 40vw;
+        height: auto;
+    }
+    .date{
+        min-width:30vw ;
+    }
+    #red{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        align-items: center;
+        justify-self: center;
+        
+    }
+    #green{
+        grid-column: 2/3;
+        grid-row: 6/7;
+        align-items: center;
+        justify-self: center;
+    }
+    .line{
+        grid-column: 4/8;
+        grid-row: 1/2;
+        display:none;
+        margin-bottom:3vh;
+    }
+    #astrick1{
+        grid-column: 4/8;
+        grid-row: 1/2;
+        margin-bottom:3vh;
+    }
+    #zero{
+        grid-column: 4/8;
+        grid-row: 2/3;
+        margin-bottom:3vh;
+    }
+    #one{
+        grid-column: 4/8;
+        grid-row:3/4;
+        margin-bottom:3vh;
+    }
+    #two{
+        grid-column: 4/8;
+        grid-row: 4/5;
+        margin-bottom:3vh;
+    }
+    #three{
+        grid-column: 4/8;
+        grid-row: 5/6;
+        margin-bottom:3vh;
+    }
+    #astrick2{
+        grid-column: 4/8;
+        grid-row: 6/7;
+        margin-bottom:3vh;
+    }
+    .astrick{
+        grid-column: 4/8;
+        grid-row: 1/2;
+        display:none;
+    }
+    #circle-astrick1{
+        display:none;
+    }
+    #circle-astrick2{
+        display:none;
+    }
+    #circle-zero{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #circle-one{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    #circle-two{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    #circle-three{
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
 }

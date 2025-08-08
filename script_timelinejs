@@ -18,11 +18,11 @@ gsap.to(".purple",{
 })
 
 
-// document.querySelectorAll('.card1').forEach(card => {
-//     card.addEventListener('click', () => {
-//         document.querySelectorAll('.card1').forEach(c => {
-//             if (c !== card) c.classList.remove('active');
-//         });
-//         card.classList.toggle('active');
-//     });
-// });
+document.querySelectorAll('.card1').forEach(card => {
+    card.addEventListener('click', () => {
+        document.querySelectorAll('.card1').forEach(c => {
+            if (c !== card) c.classList.remove('active');
+        });
+        card.classList.toggle('active');
+    });
+});
