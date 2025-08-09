@@ -23,30 +23,31 @@
 
 //slideshow
 
-const slides = document.querySelectorAll(".slide");
-let current = 0;
+const tslides = document.querySelectorAll(".tslide");
+let tcurrent = 0;
 
-slides.forEach((slide, i) => {
+tslides.forEach((slide, i) => {
     gsap.set(slide, { x: i === 0 ? 0 : "100%" });
 });
 
-function goToSlide(index, direction) {
-    const total = slides.length;
-    const prev = current;
-    current = (index + total) % total;
+function tgoToSlide(index, direction) {
+    console.log(123);
+    const total = tslides.length;
+    const prev = tcurrent;
+    tcurrent = (index + total) % total;
 
     const dir = direction === "next" ? -100 : 100;
 
-    gsap.to(slides[prev], {
+    gsap.to(tslides[prev], {
         x: `${dir}%`,
         scale: 0.6,
         duration: 0.6,
         ease: "power2.inOut"
     });
 
-    gsap.set(slides[current], { x: `${-dir}%`, scale: 0.6 });
+    gsap.set(tslides[tcurrent], { x: `${-dir}%`, scale: 0.6 });
 
-    gsap.to(slides[current], {
+    gsap.to(tslides[tcurrent], {
         x: "0%",
         scale: 1,
         duration: 0.6,
@@ -58,19 +59,19 @@ function goToSlide(index, direction) {
 function updateDots() {
     const dots = document.querySelectorAll(".dot");
     dots.forEach((dot, i) => {
-        dot.classList.toggle("active", i === current);
+        dot.classList.toggle("active", i === tcurrent);
     });
 }
 
 updateDots();
 
-document.getElementById("next").onclick = () => { goToSlide(current + 1, "next"); updateDots(); };
-document.getElementById("prev").onclick = () => { goToSlide(current - 1, "prev"); updateDots(); };
+document.getElementById("t_next").onclick = () => { tgoToSlide(tcurrent + 1, "next"); updateDots(); };
+document.getElementById("t_prev").onclick = () => { tgoToSlide(tcurrent - 1, "prev"); updateDots(); };
 
 // autoplay
 
 setInterval(() => {
-    goToSlide(current + 1, "next");
+    tgoToSlide(tcurrent + 1, "next");
     updateDots();
 }, 5000);
 

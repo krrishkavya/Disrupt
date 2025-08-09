@@ -16,6 +16,7 @@
     overflow: hidden;
 }
 
+
 .ss_heading {
     width: 60%;
     font-size: 2.2vw;
@@ -66,7 +67,7 @@
     top: -8%;
 }
 
-.slideshow {
+.tslideshow {
     position: relative;
     width: 60%;
     max-width: 900px;
@@ -79,7 +80,7 @@
     z-index: 1;
 }
 
-.slideshow.trans {
+.tslideshow.trans {
     border-radius: 0px;
 }
 
@@ -114,7 +115,7 @@
     width: 7vw;
 }
 
-.slide {
+.tslide {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -146,7 +147,7 @@
     right: 5%;
 }
 
-.slide.active {
+.tslide.active {
     pointer-events: all;
     opacity: 1;
 }
@@ -300,13 +301,13 @@
         left: 5%;
     }
 
-    .slideshow {
+    .tslideshow {
         width: 80%;
         aspect-ratio: 16/14;
         border-radius: 15px;
     }
 
-    .slide {
+    .tslide {
         border-radius: 15px;
     }
 
