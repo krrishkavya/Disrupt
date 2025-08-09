@@ -49,11 +49,64 @@ body{
     align-items: center;
     gap: 10px;
     overflow: hidden;
-    border-radius: 3vh;
+    border-radius: 4.5vh;
     border: 1px solid #FEFBF1;
     background: #0C1A38;
     transition: all 1s ease;
 }
+
+.extra{
+    overflow: hidden;
+    max-height: 0;
+    opacity: 1;
+    align-items: center;
+    transition: max-height 2s ease, opacity 0.4s ease;
+}
+.extra .purple{
+    margin-left: 40%;
+}
+/* .extra p,
+.extra svg {
+  display: none; 
+}
+
+.card1.active .extra p,
+.card1.active .extra svg {
+  display: block; 
+} */
+ .extra p,
+.extra svg {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card1.active .extra p,
+.card1.active .extra svg {
+  opacity: 1;
+}
+
+.active p{
+    opacity: 1;
+    height: auto;
+    font-size: 15px;
+    color: #FEFBF1;
+    text-align: center;
+    font-family: Montserrat;
+    padding-left: 3%;
+    padding-right: 3%;
+    
+}
+.card1 .active .extra{
+    opacity:1;
+}
+.active .card1{
+    height:auto;
+}
+.active .purple{
+    opacity: 1;
+    
+}
+
 /* .card1:hover{
     height: 40vh;
     transition: height 1s ease;
@@ -100,7 +153,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 9.116px;
-    border-radius: 1vw;
+    border-radius: 1.3vw;
     background: #1B46F4;
     color: #FEFBF1;
     text-align: center;
@@ -156,30 +209,6 @@ body{
     grid-column: 4/5;
     grid-row: 4/5;
     justify-self: center;
-}
-p{
-    display: none;
-    /* opacity:0; */
-}
-.purple{
-    display: none;
-    /* opacity: 0;
-    display: block; */
-}
-
-/* uncomment to switch to click- expansion version */
-.active p{
-    
-    display: block;
-    font-size: 15px;
-    color: #FEFBF1;
-    text-align: center;
-    font-family: Montserrat;
-    padding-left: 3%;
-    padding-right: 3%;
-}
-.active .purple{
-    display: block;
 }
 
 #horizontal-line{
@@ -314,6 +343,7 @@ p{
     #horizontal-line{
         padding-left: 0%;
         margin-right: 0%;
+        margin-top: 10vh;
         height:100%;
         width: 0.2vw;
         background:#1B46F4 ;
@@ -324,11 +354,15 @@ p{
         align-self: center;
     }
     .card1{
+        margin-left: 5vw;
         width: 40vw;
         height: auto;
+        background-color: #070C17;
     }
     .date{
         min-width:30vw ;
+        background-color: #0C1A38;
+        padding:2vh 2vw
     }
     #red{
         grid-column: 2/3;
