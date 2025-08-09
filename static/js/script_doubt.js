@@ -1,4 +1,4 @@
-const icons = document.querySelectorAll(".toggle");
+const icons = document.querySelectorAll(".dbtoggle");
 
 icons.forEach(icon => {
   icon.addEventListener("click", () => {
@@ -7,6 +7,6 @@ icons.forEach(icon => {
 
     answer.classList.toggle("show");
 
-    icon.classList.toggle("rotate");
+    icon.classList.toggle("dbrotate");
   });
 });
