@@ -51,7 +51,7 @@ body{
     padding:5px;
    margin:2px;
 }
-.logotext p{
+.logotext span{
     height:18px;
     flex-shrink: 0;
     color: #FEFBF1;
@@ -59,19 +59,19 @@ body{
     font-size: 9px;
     font-style: normal;
     font-weight: 400;
-    line-height: 23.729px; /* 151.105% */
+    /* line-height: 23.729px; 151.105% */
     letter-spacing: -0.614px;
     margin:0px;
     
 }
-.logotext .ecell{
+.logotext .hecell{
     height:20px;
     color: #FEFBF1;
     font-family: Nohemi,sans-serif;
     font-size: 10px;
     font-style: normal;
     font-weight: 500;
-    line-height: 25.916px; /* 157.462% */
+    /* line-height: 25.916px; 157.462% */
     letter-spacing: -0.006px;
     text-transform: uppercase;
     margin-top: 2px;

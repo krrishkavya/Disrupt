@@ -12,9 +12,9 @@ body {
   overflow-x: hidden;
 }
 .top-svg {
-  position: absolute;
-  top: 8.7vh;
-  left: 6vw;
+  position: relative;
+  top: 25vh;
+  left: 8vw;
   width: 10vw;
   height: 18vh;
   z-index: 2;
@@ -26,9 +26,9 @@ body {
 }
 
 .bottom-svg {
-  position: absolute;
-  bottom: 1.5vh;
-  right: 1.5vw;
+  position: relative;
+  bottom: 10vh;
+  left: 85vw;
   width: 24vh;
   height: auto;
   z-index: 2;
