@@ -1,4 +1,44 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // --- START: NEW ACCORDION LOGIC ---
+    // This part handles the expand/collapse functionality for the mobile view.
+
+    const accordionCards = document.querySelectorAll('.rule-card');
+
+    // Set the "Single Track per Idea" card to be open by default to match the screenshot.
+    // This is robust because it checks the text content, not just the order in the HTML.
+    accordionCards.forEach(card => {
+        const heading = card.querySelector('.rule-card-heading');
+        if (heading && heading.textContent.trim() === 'Single Track per Idea') {
+            card.classList.add('open');
+        }
+    });
+
+    accordionCards.forEach(card => {
+        card.addEventListener('click', () => {
+            // First, check if the clicked card was already open before the click.
+            const wasOpen = card.classList.contains('open');
+
+            // Close all other cards to ensure only one is open at a time.
+            accordionCards.forEach(c => {
+                if (c !== card) {
+                    c.classList.remove('open');
+                }
+            });
+
+            // Then, toggle the 'open' class on the card that was clicked.
+            // If it was open, it will now be closed. If it was closed, it will now be open.
+            if (!wasOpen) {
+                card.classList.add('open');
+            } else {
+                card.classList.remove('open');
+            }
+        });
+    });
+
+    // --- END: NEW ACCORDION LOGIC ---
+
+
+    // --- Original Desktop Slider Logic ---
     const main_area = document.getElementById("rule-table");
     const prevBtn = document.getElementById("prev-btn");
     const nextBtn = document.getElementById("next-btn");
@@ -12,22 +52,26 @@ document.addEventListener("DOMContentLoaded", () => {
         main_area.scrollBy({ left: offset, behavior: "smooth" });
     }
 
-    prevBtn.addEventListener("click", () => {
-        const offset = -getScrollAmount(main_area);
-        scrollRowsBy(offset);
-    });
+    // Add listeners only if the buttons exist (they are hidden on mobile)
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener("click", () => {
+            const offset = -getScrollAmount(main_area);
+            scrollRowsBy(offset);
+        });
 
-    nextBtn.addEventListener("click", () => {
-        const offset = getScrollAmount(main_area);
-        scrollRowsBy(offset);
-    });
+        nextBtn.addEventListener("click", () => {
+            const offset = getScrollAmount(main_area);
+            scrollRowsBy(offset);
+        });
+    }
 
-    const circle = document.querySelector('.progress-ring-circle');
-    const radius = circle.r.baseVal.value;
-    const circumference = 2 * Math.PI * radius;
 
-    circle.style.strokeDasharray = `${circumference}`;
-    circle.style.strokeDashoffset = `${circumference}`;
+    // const circle = document.querySelector('.progress-ring-circle');
+    // const radius = circle.r.baseVal.value;
+    // const circumference = 2 * Math.PI * radius;
+
+    // circle.style.strokeDasharray = `${circumference}`;
+    // circle.style.strokeDashoffset = `${circumference}`;
 
     function setProgress(percent) {
         const offset = circumference - (percent / 100) * circumference;
@@ -81,20 +125,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const observerOptions = {
         root: null,
-        threshold: 0.6, 
+        threshold: 0.6,
     };
 
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Trigger animation only once
-                requestAnimationFrame(animateSmoothProgressRing);
-                observer.unobserve(rulesHeading);
-            }
-        });
-    }, observerOptions);
+    // const observer = new IntersectionObserver((entries, observer) => {
+    //     entries.forEach(entry => {
+    //         if (entry.isIntersecting) {
+    //             // Trigger animation only once
+    //             requestAnimationFrame(animateSmoothProgressRing);
+    //             observer.unobserve(rulesHeading);
+    //         }
+    //     });
+    // }, observerOptions);
 
-    observer.observe(rulesHeading);
+    // observer.observe(rulesHeading);
 
 
 });

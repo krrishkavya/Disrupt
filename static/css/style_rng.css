@@ -4,6 +4,7 @@ body{
     margin: 0;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .rules{
@@ -24,7 +25,7 @@ body{
 
 .rules-heading-container{
     display: flex;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     line-height: normal;
     color: #FEFBF1;
@@ -45,7 +46,7 @@ body{
     /* width: 100vw; */
     max-width: 81vw;
     height: 80vh;
-    overflow: hidden;
+    overflow-x: hidden;
     /* display: flex;
     flex-direction: column; */
     display: grid;
@@ -67,7 +68,7 @@ body{
 .rule-card-container {
     display: flex;
     flex-direction: row;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100%;
     gap: 18px;
     scroll-behavior: smooth;
@@ -138,7 +139,7 @@ body{
 .rule-card-heading{
     color: #D9FE78;
     text-align: center;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
@@ -148,7 +149,7 @@ body{
 .rule-card-content{
     color: #FEFBF1;
     text-align: center;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -239,19 +240,117 @@ body{
     }
 }
 
+/* --- UPDATED MOBILE/ACCORDION VIEW --- */
 @media (max-width:956px){
+    .rules-main-mesh-area{
+        background: none;
+    }
+
+    /* Hide desktop-only elements */
+    .rules-arrow-container,
+    .rule-area {
+        display: none;
+    }
+
+    /* Style the main container for a vertical list */
     .rules-main-area{
-        max-width: 62vw;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto;
+        overflow-x: hidden;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto; /* Override fixed height for content to expand */
+        padding-bottom: 50px;
+    }
+    
+    /* --- Reorder cards to match mobile design --- */
+    .rules-main-area > .rule-card:nth-of-type(1) { order: 1; } /* Unstop Registration */
+    .rules-main-area > .rule-card:nth-of-type(3) { order: 2; } /* Team Member */
+    .rules-main-area > .rule-card:nth-of-type(2) { order: 3; } /* Verification */
+    .rules-main-area > .rule-card:nth-of-type(5) { order: 4; } /* Team Leader */
+    .rules-main-area > .rule-card:nth-of-type(6) { order: 5; } /* Eligibility */
+    .rules-main-area > .rule-card:nth-of-type(4) { order: 6; } /* Single Track per Idea */
+
+    /* Default (collapsed) accordion item style */
+    .rule-card {
+        border-radius: 12px;
+        background: #FEFBF1;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px 24px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        border: 1px solid rgba(254, 251, 241, 0.2);
+        /* display: flex;
+        flex-direction: column; */
+        /* display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; */
     }
 
-    .rule-area{
-        min-width: 58.9vw;
+    .rule-card-heading {
+        color: #0C1A38;
+        font-family: Montserrat, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: left; /* This correctly aligns the heading text to the left */
+        line-height: 1.4;
+        padding-right: 30px; /* Makes space for the arrow */
+        transition: color 0.3s ease-in-out;
+        position: relative;
     }
 
-    .rule-card{
-        min-width: 58.9vw;
+    .rule-card-content {
+        color: #0C1A38;
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left; /* This aligns the description text to the left */
+        max-height: 0;
+        overflow: hidden;
+        margin-top: 0;
+        transition: max-height 0.4s ease-out, margin-top 0.4s ease-out;
+    }
+
+    /* Arrow icon using a pseudo-element */
+    .rule-card::after {
+        content: '';
+        position: absolute;
+        right: 24px;
+        top: 22px;
+        width: 20px;
+        height: 20px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%230C1A38' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transition: transform 0.3s ease, background-image 0.3s ease;
+        transform: rotate(0deg);
+    }
+    
+    /* --- Styles for the OPEN accordion item --- */
+    .rule-card.open {
+        background: #FEFBF1;
+        border-color: #FEFBF1;
+    }
+
+    .rule-card.open .rule-card-heading {
+        color: #0C1A38;
+    }
+
+    .rule-card.open .rule-card-content {
+        max-height: 250px; /* A generous height to allow content to show */
+        margin-top: 12px;
+    }
+
+    .rule-card.open::after {
+        transform: rotate(180deg);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%230C1A38' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
     }
 }
-
-
-

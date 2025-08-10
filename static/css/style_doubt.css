@@ -55,7 +55,7 @@ body{
 }
 .doubt-answer{
     max-height:0;
-    overflow:hidden;
+    overflow-y:hidden;
     transition:max-height 0.4s ease;
     color:gray;
     font-size:1.2em;
