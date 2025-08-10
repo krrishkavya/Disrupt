@@ -2,6 +2,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
     /* background-color:rgba(7, 12, 23, 1); */
     
 }
@@ -9,16 +10,20 @@
     padding-right: 30px;
 } */
 .landing-container{
-    position: relative;
+    /* position: relative; */
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     /* overflow: hidden; */
+    padding-bottom: 8rem;
+    flex-wrap: wrap;           /* Allow wrapping */
+    align-items: stretch;      /* Stretch vertically */
+    justify-content: stretch;
     /* border: 1px solid yellow; */
 }
 .landing-heading{
     display: flex;
     gap: 6px;
-    position:relative;
+    /* position:relative; */
     /* z-index:999; */
     margin-top: 160px;
     /* margin-top: 10%; */
@@ -26,7 +31,7 @@
     margin-right: 20%;
 }
 .landing-heading svg{
-    flex-shrink: 1;
+    flex-shrink: 1 ;
     z-index: 5;
     background-color: transparent;
     /* width:10%; */
@@ -44,6 +49,7 @@
     width: 100%;
     position:absolute;
     z-index:1;
+    flex-shrink: 1;
     /* margin-right: 5%; */
     /* border: 1px solid yellow; */
     padding-top: 10px;
@@ -110,6 +116,8 @@
     margin-top: -7%;
     /* border: 2px solid red; */
     background: none;
+    position: relative;
+    z-index: 5;
 
 }
 .landing-union img{
@@ -130,10 +138,11 @@
 }
 .landing-logo div{
     background: none;
+    
 }
 .landing-logo div:first-child{
     /* border: 2px solid red; */
-    margin-top: 2rem;
+    margin-top: 3.9rem;
 }
 .landing-logo img{
     background: none;
@@ -142,8 +151,9 @@
     height: auto; */
 }
 .landing-para{
+    order: 1;
     color: rgba(254, 251, 241, 1);
-    margin-top: 9%;
+    margin-top: 100px;
     /* border: 1px solid red; */
     width: 30%;
     z-index: 999;
@@ -155,10 +165,17 @@
     font-weight: 500;
     font-style: normal;
 }
+.landing-star{
+    position: relative;
+    margin-top: -6%;
+    margin-left: 64%;
+   /* z-index: 5; */
+}
 .landing-button{
+    order: 2;
     z-index: 5;
     position: relative;
-   margin-top: 5%;
+   /* margin-top: 15%; */
    margin-left: 40%;
    margin-right: 40%;
    /* border: 1px solid red; */
@@ -186,42 +203,77 @@
     cursor: pointer;
     scale: 1.05;
 }
-.landing-star{
-    position: absolute;
-    margin-top: -10%;
-   margin-left: 61%;
-   /* z-index: 5; */
-}
+
 .landing-bar{
+    /* border: 1px solid red; */
+    position: relative;
+    z-index: 100;
     display: flex;
+    flex-shrink: 1;
     color: white;
-    /* border: 2px solid red; */
     justify-content: space-around;
-    margin: 80px;
+    margin-top: 4%;
+    gap: 1rem;
+    
 }
 .landing-b{
     display: flex;
-    gap:10px;
+    gap: 10px;
+    
 }
 .landing-details{
     display: flex;
     flex-direction: column;
-}
-.landing-details{
-    /* border: 2px dotted yellow; */
     font-family: "Montserrat", sans-serif;
 }
 .landing-details div:first-child{
     color: rgba(254, 251, 241, 1);
     font-style: normal;
     font-weight: 600;
-    font-size: 50px;
+    font-size: clamp(2rem, 5vw, 3.125rem); /* Responsive font size */
     line-height: 3rem;
 }
 .landing-details div:nth-child(2){
     align-self:stretch;
     color: #D9FE78;
-    font-size: 25px;
+    font-size: clamp(1rem, 3vw, 1.5625rem); /* Responsive font size */
     font-style: normal;
     font-weight: 600;
+}
+
+
+/*...................MOBILE VIEW..........................*/
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    .landing-container{
+        justify-content: center;
+    }
+    .landing-button {
+        position: relative;
+        order: 1;
+        z-index: 5;
+        position: relative;
+        /* margin-top: 5%; */
+        margin-left: 40%;
+        margin-right: 40%;
+        /* justify-content: center; */
+    }
+    .landing-para {
+        order: 2;
+        color: rgba(254, 251, 241, 1);
+        margin-top: 15rem;
+        /* border: 1px solid red; */
+        width: 50%;
+        z-index: 999;
+        margin-left: 25%;
+        text-align: justify;
+        /* Remove position: relative to keep it in normal flow */
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
 }

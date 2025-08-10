@@ -21,10 +21,9 @@ gsap.from('.landing-green',{
     yoyo:true,
     ease:'power1.inOut',
 })
-gsap.to('.landing-star',{
+gsap.to('.landing-star img',{
     rotate:360,
-    duration:4,
+    duration:8,
     repeat:-1,
-    yoyo:true,
-    ease:'slow(0.7,0.7,false)',
+    ease:'none',
 })
