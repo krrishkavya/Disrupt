@@ -60,7 +60,7 @@
     max-height: 0;
     opacity: 1;
     align-items: center;
-    transition: max-height 2s ease, opacity 0.4s ease;
+    transition: max-height 0.8s ease, opacity 0.2s ease;
 }
 .extra .purple{
     margin-left: 40%;
@@ -335,12 +335,12 @@
     grid-row: 6/7;
 }
 @media screen and (max-width:776px){
-    .section1{
+    .section1-timeline{
         display: grid;
         grid-template-columns: repeat(8,minmax(2vw,auto));
         grid-template-rows: repeat(6,minmax(6vh,auto));
     }
-    #headingg{
+    #heading-timeline{
         text-align: center;
     }
     #horizontal-line{
