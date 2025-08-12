@@ -3,6 +3,8 @@ cardsData =[
     ["Mr. Narayan Murthy","Co-Founder, Infosys","/images/logo.png"],
     ["Mr. Narayan Murthy","Co-Founder, Infosys","/images/logo.png"],
     ["Mr. Narayan Murthy","Co-Founder, Infosys","/images/logo.png"],
+    ["Mr. Narayan Murthy","Co-Founder, Infosys","/images/logo.png"],
+    ["Mr. Narayan Murthy","Co-Founder, Infosys","/images/logo.png"],
 
 ]
 function addCard([name,company,url]){

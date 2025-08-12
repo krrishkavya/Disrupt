@@ -27,3 +27,9 @@ gsap.to('.landing-star img',{
     repeat:-1,
     ease:'none',
 })
+gsap.to("#red",{
+    rotate:360,
+    duration:8,
+    repeat:-1,
+    ease:'none'
+})
