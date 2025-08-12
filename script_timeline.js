@@ -26,14 +26,14 @@ gsap.to(".purple",{
 //         card.classList.toggle('active');
 //     });
 // });
-document.querySelectorAll('.card1').forEach(card => {
+document.querySelectorAll('.card1-timeline').forEach(card => {
   const extra = card.querySelector('.extra');
 
   card.addEventListener('click', () => {
     const isActive = card.classList.contains('active');
 
     // Close all cards
-    document.querySelectorAll('.card1').forEach(c => {
+    document.querySelectorAll('.card1-timeline').forEach(c => {
       c.classList.remove('active');
       c.querySelector('.extra').style.maxHeight = null;
     });
