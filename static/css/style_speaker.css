@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgba(7, 12, 23, 1);
+}
+.speaker-heading{
+    color: #FEFBF1;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 100%;
+    text-align: center;
+    margin-top: 70px;
+}
+.speaker-heading span{
+    color:#D9FE78;
+}
+.speaker-main{
+    margin-top: 60px;
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    /* border: 2px solid red; */
+    gap: 19px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+.speaker-card{
+    border: 3px solid #D9FE78;
+    width: 440px;
+    height: 170px;
+    background-color: #FEFBF1;
+    border-radius: 8px;
+    display: flex;
+    background: url('../../images/logo.png') #FEFBF1 100% / cover no-repeat;
+    background-position: 90px -5px;
+}
+.card-details{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+.card-name{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    font-style: normal;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.card-company{
+    color: #7E2BD9;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 11px;
+    margin-left: 30px;
+}
+@media(max-width:426px){
+    .speaker-main{
+    margin-top: 60px;
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    /* border: 2px solid red; */
+    gap: 19px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+ .speaker-card{
+    border: 1px solid #FEFBF1;
+    width: 180px;
+    height: 190px;
+    background-color: #0C1A38;
+    border-radius: 18px;
+    display: flex;
+    background: url('../../images/logo.png') #0C1A38 100% /  no-repeat;
+    background-position: -155px 0px;
+    background-size: 250%;
+}
+.card-details{
+    margin-top: 79%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 144px;
+    height: 38px;
+    margin-left: 10%;
+    border-radius: 4px;
+}
+.card-name{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-weight: 600;
+    /* display: flex; */
+    width: 90%;
+
+    line-height: normal;
+    margin-top: 10px;
+    margin-left:5%;
+    /* border: 1px solid black; */
+    /* text-align: center; */
+
+}
+.card-company{
+    color: #7E2BD9;
+    font-size: 8px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 0px;
+    /*margin-left: 30px; */
+}
+}
