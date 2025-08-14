@@ -39,9 +39,82 @@ body{
     background-color: #FEFBF1;
     border-radius: 8px;
     display: flex;
-    background: url('../../images/logo.png') #FEFBF1 100% / cover no-repeat;
+    /* background: url('../../images/logo.png') #FEFBF1 100% / cover no-repeat; */
+    /* background-position: 90px -5px; */
+}
+/*Hard coding all the images for speakers*/
+#card1 {
+    background: url('../../images/logo/1.png') #FEFBF1 100% / cover no-repeat; 
+    background-position: 190px 0px;
+    background-size: 56%;
+}
+
+#card2 {
+    background: url('../../images/logo/2.png') #FEFBF1 100% / cover no-repeat; 
+    background-position: 190px 6px;
+    background-size: 60%;
+}
+
+#card3 {
+    background: url('../../images/logo/3.png') #FEFBF1 100% / cover no-repeat; 
+    background-position: 170px 0px;
+    background-size: 70%;
+}
+
+#card4 {
+    background: url('../../images/logo/4.png') #FEFBF1 100% / cover no-repeat; 
+    background-position: 190px 0px;
+    background-size: 55%;   
+}
+
+#card5 {
+    background: url('../../images/logo/5.png') #FEFBF1 100% / cover no-repeat; 
+    background-position: 250px 10px;
+    background-size: 40%;
+}
+
+#card6 {
+    background: url('../../images/logo/6.png') #FEFBF1 100% / cover no-repeat; 
+    background-position: 150px -7px;
+    background-size: 65%;
+}
+
+#card7 {
+    background: url('../../images/logo/7.png') #FEFBF1 100% / cover no-repeat; 
+    background-position: 220px 10px;
+    background-size: 50%;
+}
+
+#card8 {
+    background: url('../../images/logo/8.png') #FEFBF1 100% / cover no-repeat; 
+    background-position: 220px -10px;
+    background-size: 52%;
+}
+
+#card9 {
+    background: url('../../images/logo/9.png') #FEFBF1 100% / cover no-repeat; 
+    background-position: 220px 2px;
+    background-size: 50%;
+}
+
+#card10 {
+    background: url('../../images/logo/10.png') #FEFBF1 100% / cover no-repeat; 
+    background-position: 190px 5px;
+    background-size: 65%;
+}
+
+#card11 {
+    background: url('../../images/logo/11.png') #FEFBF1 100% / cover no-repeat; 
     background-position: 90px -5px;
 }
+
+#card12 {
+    background: url('../../images/logo/12.png') #FEFBF1 100% / cover no-repeat; 
+    background-position: 250px -25px;
+    background-size: 50%;
+}
+
+/*...............................................................................*/
 .card-details{
     display: flex;
     flex-direction: column;
@@ -78,17 +151,92 @@ body{
     margin-bottom: 50px;
     flex-wrap: wrap;
 }
- .speaker-card{
+.speaker-card{
     border: 1px solid #FEFBF1;
     width: 180px;
     height: 190px;
     background-color: #0C1A38;
     border-radius: 18px;
     display: flex;
-    background: url('../../images/logo.png') #0C1A38 100% /  no-repeat;
+    /* background: url('../../images/logo.png') #0C1A38 100% /  no-repeat;
     background-position: -155px 0px;
-    background-size: 250%;
+    background-size: 250%; */
 }
+/*Hard-coding all images for speaker section*/
+
+#card1 {
+    background: url('../../images/logo/1.png') no-repeat; 
+    background-position: 0px 0px;
+    background-size: 100%;
+}
+
+#card2 {
+    background: url('../../images/logo/2.png') no-repeat; 
+    background-position: 0px 10px;
+    background-size: 120%;
+}
+
+#card3 {
+    background: url('../../images/logo/3.png') no-repeat; 
+    background-position: -80px 10px;
+    background-size: 180%;
+}
+
+#card4 {
+    background: url('../../images/logo/4.png') no-repeat; 
+    background-position: -20px 0px;
+    background-size: 120%;
+}
+
+#card5 {
+    background: url('../../images/logo/5.png') no-repeat; 
+    background-position: 0px 0px;
+    background-size: 100%;
+}
+
+#card6 {
+    background: url('../../images/logo/6.png') no-repeat; 
+    background-position: -80px 10px;
+    background-size: 150%;
+}
+
+#card7 {
+    background: url('../../images/logo/7.png') no-repeat; 
+    background-position: -30px 0px;
+    background-size: 130%;
+}
+
+#card8 {
+    background: url('../../images/logo/8.png') no-repeat; 
+    background-position: -20px 0px;
+    background-size: 120%;
+}
+
+#card9 {
+    background: url('../../images/logo/9.png') no-repeat; 
+    background-position: 0px 20px;
+    background-size: 100%;
+}
+
+#card10 {
+    background: url('../../images/logo/10.png') no-repeat; 
+    background-position: -30px 10px;
+    background-size: 140%;
+}
+
+#card11 {
+    background: url('../../images/logo/11.png') no-repeat; 
+    background-position: -80px 0px;
+    background-size: 190%;
+}
+
+#card12 {
+    background: url('../../images/logo/12.png') no-repeat; 
+    background-position: 0px -20px;
+    background-size: 120%;
+}
+
+/*.......................................................................*/
 .card-details{
     margin-top: 79%;
     display: flex;
@@ -122,6 +270,7 @@ body{
     font-style: normal;
     line-height: normal;
     margin-top: 0px;
+    margin-left:5%;
     /*margin-left: 30px; */
 }
 }
