@@ -1,3 +1,4 @@
+
 cardsData =[
     ["Mr. Ashneer Grover","Co-Founder, Bharatpe","/images/logo.png"],
     ["Mr. Narayan Murthy","Founder, Infosys","/images/logo.png"],
@@ -22,3 +23,4 @@ function addCard([name,company,url]){
    
 }
 cardsData.forEach(addCard);
+
