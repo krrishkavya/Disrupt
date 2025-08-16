@@ -26,3 +26,22 @@ gsap.to(".purple",{
 //         card.classList.toggle('active');
 //     });
 // });
+document.querySelectorAll('.card1-timeline').forEach(card => {
+  const extra = card.querySelector('.extra');
+
+  card.addEventListener('click', () => {
+    const isActive = card.classList.contains('active');
+
+    // Close all cards
+    document.querySelectorAll('.card1-timeline').forEach(c => {
+      c.classList.remove('active');
+      c.querySelector('.extra').style.maxHeight = null;
+    });
+
+    // If the clicked one was not active, open it
+    if (!isActive) {
+      card.classList.add('active');
+      extra.style.maxHeight = extra.scrollHeight + "px";
+    }
+  });
+});
