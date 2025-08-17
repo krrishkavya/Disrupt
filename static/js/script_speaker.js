@@ -13,14 +13,19 @@ cardsData =[
     ["Mr. Ankit Nagori","Founder, Curefit","/images/logo.png"],
     ["Mr. Amod Malviya","Co-Founder, Udaan","/images/logo.png"],
 ]
-function addCard([name,company,url]){
-    main = document.querySelector('.speaker-main');
-    main.innerHTML += `<div class="speaker-card" >
+
+function addCard([name, company, url], index) {
+    let main = document.querySelector('.speaker-main');
+    main.innerHTML += `
+        <div class="speaker-card" id="card${index + 1}">
             <div class="card-details">
-                <div class="card-name">${name}</div><div class="card-company">${company}</div>
+                <div class="card-name">${name}</div>
+                <div class="card-company">${company}</div>
             </div>
         </div>`;
-   
 }
-cardsData.forEach(addCard);
+
+cardsData.forEach((card, index) => {
+    addCard(card, index);
+});
 
