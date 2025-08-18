@@ -33,3 +33,36 @@ gsap.to("#red",{
     repeat:-1,
     ease:'none'
 })
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray(".count-up").forEach(counter => {
+        const endValue = parseInt(counter.dataset.end, 10);
+        
+  
+        let proxy = { value: 0 };
+
+        gsap.to(proxy, {
+            value: endValue, 
+            duration: 2,
+            ease: "power1.inOut",
+            scrollTrigger: {
+                trigger: ".landing-bar",
+               
+                start: "top 95%", 
+                once: true               
+            },
+
+            onUpdate: () => {
+                counter.textContent = Math.ceil(proxy.value);
+            },
+
+            onComplete: () => {
+                counter.textContent = endValue;
+            }
+        });
+    });
+});

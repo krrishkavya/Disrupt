@@ -359,4 +359,44 @@
     position: absolute;
     top: -15%;
 }
+
+.landing-bar {
+        /* Adds space above the bar and adjusts for smaller screens */
+        margin-top: 10rem;
+        gap: 0.5rem;
+    }
+
+    .landing-b {
+        /* Stacks the icon and text vertically */
+        flex-direction: column;
+        /* Centers the icon and text horizontally */
+        align-items: center;
+        gap: 8px; /* Sets space between the icon and the text */
+    }
+
+    .landing-logo img {
+        /* Sets a fixed size for the icons, similar to the Figma design */
+        width: 24px;
+        height: 24px;
+    }
+
+    .landing-details {
+        /* Ensures the text lines are centered */
+        align-items: center;
+    }
+
+    .landing-details div:first-child {
+        /* Reduces font size for the numbers on mobile */
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+    }
+
+    .landing-details div:nth-child(2) {
+        /* Reduces font size for the labels */
+        font-size: 0.8rem;
+        /* Changes font color from green to off-white to match the image */
+        color: #D9FE78;
+        font-weight: 400; /* Makes the font lighter */
+    }
+
 }
