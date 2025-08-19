@@ -10,6 +10,7 @@
 }
 .section1-timeline{
     display: grid;
+    margin-top: 6vh;
     grid-template-columns: repeat(17,minmax(2vw,auto));
     grid-template-rows: repeat(8,minmax(6vh,auto));
 }
@@ -37,15 +38,13 @@
 
 .card1-timeline{
     height: auto;
-    width:16vw;
+    width:20vw;
     display: inline-flex;
-    padding: 2vh 0.4vw;
-    padding-top: 4vh;
-    padding-bottom: 4vh;
+    padding: 4vh 0.8vw;
     padding-left: 2vw;
     padding-right: 2vw;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     gap: 0.5vh;
     overflow: hidden;
@@ -56,14 +55,17 @@
 }
 
 .extra{
+    display: grid;
     overflow: hidden;
     max-height: 0;
     opacity: 1;
+    place-items: center;
     align-items: center;
+    justify-content: center;
     transition: max-height 0.8s ease, opacity 0.2s ease;
 }
 .extra .purple{
-    margin-left: 40%;
+    
 }
 /* .extra p,
 .extra svg {
@@ -76,8 +78,9 @@
 } */
  .extra p,
 .extra svg {
-  opacity: 0;
-  transition: opacity 0.3s ease;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .card1.active .extra p,
@@ -88,7 +91,7 @@
 .active p{
     opacity: 1;
     height: auto;
-    font-size: 15px;
+    font-size: 0.8rem;
     color: #FEFBF1;
     text-align: center;
     font-family: Montserrat;
@@ -133,7 +136,7 @@
     color: #FEFBF1;
     text-align: center;
     font-family: Montserrat;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -184,7 +187,7 @@
     font-size: 50px;
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -358,12 +361,13 @@
     }
     .card1-timeline{
         margin-left: 5vw;
-        width: 40vw;
+        width: 55vw;
         height: auto;
+
         background-color: #070C17;
     }
     .date{
-        min-width:30vw ;
+        min-width:40vw ;
         background-color: #0C1A38;
         padding:2vh 2vw
     }
