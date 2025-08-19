@@ -220,11 +220,6 @@
    transform-origin: top left;
 }
 /*END*/
-
-
-
-
-
 .landing-bar{
     /* border: 1px solid red; */
     position: relative;
@@ -235,7 +230,21 @@
     justify-content: space-around;
     margin-top: 4%;
     gap: 1rem;
-    
+    /* border: 1px dotted beige; */
+    height: 100%; /* Ensure li fills parent flex height */
+    min-height: 0; /* Prevent overflow */
+    flex: 1 1 auto; /* Allow li to shrink/grow inside flex */
+    overflow: hidden; /* Hide overflow content */
+}
+@media(max-width:700px){
+    .landing-bar{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-left: 15%; /* Adjust px as needed */
+    }
 }
 .landing-b{
     display: flex;
