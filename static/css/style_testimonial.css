@@ -158,6 +158,8 @@
     background-size: cover;
     background-position: center;
     background-color: #273961;
+    display: flex;
+    align-items: center;
 }
 
 .slide_text {
