@@ -180,7 +180,8 @@
    margin-right: 40%;
    /* border: 1px solid red; */
 }
-.landing-button button{
+.register-now{
+    text-decoration: none;
     box-sizing: border-box;
     padding: 14px 40px;
     display: inline-flex;
@@ -198,7 +199,7 @@
     color: #070C17;
     line-height: normal;
 }
-.landing-button button:hover{
+.register-now:hover{
     box-shadow: 6.004px 4.003px 0px 0px #FEFBF1;
     cursor: pointer;
     scale: 1.05;
@@ -291,16 +292,18 @@
         position: relative;
         order: 1;
         z-index: 5;
-        position: relative;
+        position: absolute;
         /* margin-top: 5%; */
         margin-left: 40%;
         margin-right: 40%;
+        top: 35%;
+        left: -15%;
         /* justify-content: center; */
     }
     .landing-para {
         order: 2;
         color: rgba(254, 251, 241, 1);
-        margin-top: 15rem;
+        margin-top: 25rem;
         /* border: 1px solid red; */
         width: 50%;
         z-index: 999;
