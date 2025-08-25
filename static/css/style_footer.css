@@ -17,17 +17,20 @@ body{
 }
 .footer{
     box-sizing: border-box;
-    display:flex;
-    width: 100%;/*1450px*/
-    height: 200px ; /*365px*/
-    flex-shrink: 0;
+    display: flex;
+    width: 100%;
     background: #0C1A38;
-    padding:10px 10px 10px 10px ;
-   justify-content: space-around;
-    
+    padding: 10px;
+    justify-content: space-around;
+    min-width: 250px;
+    /* Prevent overflow */
+    overflow: hidden;
 }
 .logodes{
-   padding:10px; 
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    /* border: 1px solid white;  */
 }
 .logodes .logo{
     display: flex;
@@ -79,20 +82,26 @@ body{
     margin-bottom: 0px;
 }
 .heading{
-    position: absolute;
-    top:80px;
+    position: relative;
+    /* top:80px; */
 }
-.name svg{
-    width:70%;
+.name svg {
+    width: 180px;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
 }
-.design svg{
-    width:15%;
-    height:10%;
+
+.design svg {
+    width: 3em;
+    height: 3em;
+    max-width: 100%;
+    max-height: 100%;
 }
 .contactdetails{
-    padding: 10px;
+    padding: 10px 30px;
     text-align: left;
-    
+    /* border: 1px solid greenyellow; */
 }
 .contactdetails ul{
     margin:0px;
@@ -230,7 +239,7 @@ body{
 /* <681px-phone number cmg down
 <588-the grid collapses */
 
-@media(max-width:412px){
+@media(max-width:426px){
     .back{
         position: absolute;
         top:0%;
@@ -249,6 +258,7 @@ body{
    }
    .row1{
     display: flex;
+    justify-content: space-around;
    }
   ul.vision{
     padding:10px 10px;;
@@ -259,9 +269,10 @@ body{
     display: flex;
     flex-direction: row;
     position: relative;
-    top:2%;
+    top:20%;
     height: 60px;
     padding:0px;
+    gap: 10%;
    }
    .logo{
     position:relative;
@@ -282,21 +293,18 @@ body{
     min-width: fit-content;
    }
    div.contact{
+    margin-top: 20px;
     display:flex;
     flex-direction: column;
-    gap:0px;
+    gap:10px;
    }
    .socialRow{
+    margin-top: 24%;
     display:flex;
+    justify-content: space-evenly;
    }
-   .utube{
-    width:80px;
-    position:relative;
-    top:10%;
-   }
-   .norm{
-    width:30px;
-    padding:15px;
+   .whitee{
+    display: none;
    }
 
 }
