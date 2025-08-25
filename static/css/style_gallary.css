@@ -101,10 +101,11 @@ body {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 49.862vw;
+  width: 49.862vw; 
   height: 53.08vh;
   transform-style: preserve-3d;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);

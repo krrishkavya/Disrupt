@@ -1,12 +1,14 @@
 const images = [
-  'https://plus.unsplash.com/premium_photo-1674929042069-4999154c68b1?q=80&w=858',
-  'https://plus.unsplash.com/premium_photo-1676496046182-356a6a0ed002?w=500',
-  'https://images.unsplash.com/photo-1511884642898-4c92249e20b6?w=500',
-  'https://images.unsplash.com/photo-1506260408121-e353d10b87c7?w=500',
-  'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500',
-  'https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?w=500',
-  'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=500',
-  'https://plus.unsplash.com/premium_photo-1668024966086-bd66ba04262f?w=500'
+  'images/gallery/DSC09542.JPG',
+  'images/gallery/DSC09545.JPG',
+  'images/gallery/DSC09546.JPG',
+  'images/gallery/DSC09552.JPG',
+  'images/gallery/DSC09557.JPG',
+  'images/gallery/DSC09562.JPG',
+  'images/gallery/DSC09567.JPG',
+  'images/gallery/DSC09568.JPG',
+  'images/gallery/DSC09590.JPG',
+  'images/gallery/DSC09593.JPG'
 ];
 
 const slider = document.getElementById('slider');
